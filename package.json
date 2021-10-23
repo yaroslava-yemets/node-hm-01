@@ -1,0 +1,23 @@
+{
+  "name": "hm-01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yaroslava-yemets/node-hm-01.git"
+  },
+  "author": "Yaroslava Yemets",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yaroslava-yemets/node-hm-01/issues"
+  },
+  "homepage": "https://github.com/yaroslava-yemets/node-hm-01#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  }
+}
