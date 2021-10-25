@@ -45,8 +45,12 @@ const argv = program.opts();
         
             case 'remove':
               const deletedContact = await removeContact(id);
-              console.log(chalk.green('Contact deleted'));  
-              console.log(deletedContact);
+              if(deletedContact.length > 0) {
+                console.log(chalk.green('Contact deleted'));  
+                console.log(deletedContact);
+              } else {
+                console.log(chalk.yellow('Contact was not found'));
+              }
               break;
         
             default:
@@ -56,9 +60,3 @@ const argv = program.opts();
         console.error(chalk.red(error.message));
     }
 })(argv)
-
-// listContacts();
-// addContact('Maria', 'maria@gmail.com', '8977653');
-// getContactById(8);
-// removeContact(5);
-// getContactById(7);
